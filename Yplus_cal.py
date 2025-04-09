@@ -1,8 +1,24 @@
 #########################         GUI        ##############################
 from tkinter import*
 root=Tk()
+######### Setting window Started   ##############
 root.title("A&Y Engineering Solutions")
-root.iconbitmap("Eng_Icon.ico")  # Use .ico format
+root.iconbitmap("Eng_Icon.ico")
+W=700
+H=500
+xwidth=root.winfo_screenwidth()
+yheight=root.winfo_screenheight()
+x=int(xwidth/2-W/2)
+y=int(yheight/2-H/2)
+root.geometry(f"{W}x{H}+{x}+{y}")
+root.resizable(False,False)
+# Transparancy
+root.attributes("-alpha",0.98)
+# Background
+root.config(bg="green")
+######### Window settings completed #############
+
+
 root.mainloop()
 ######################### Backend of the APP ##############################
 import numpy as np
