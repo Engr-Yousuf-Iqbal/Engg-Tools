@@ -1,3 +1,10 @@
+#########################         GUI        ##############################
+from tkinter import*
+root=Tk()
+root.title("A&Y Engineering Solutions")
+root.iconbitmap("Eng_Icon.ico")  # Use .ico format
+root.mainloop()
+######################### Backend of the APP ##############################
 import numpy as np
 print("This is a Y+ Calculator for CFD Applications")
 rho= 1.225 #float(input("Enter density: "))
